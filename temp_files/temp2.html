@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button with Closure</title>
+    <style>
+      .button-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+    <button id="button3">Button 3</button>
+    <div class="button-container">
+      <p id="output1">hello</p>
+      <p id="output2">hi</p>
+      <p id="output3">ismail</p>
+    </div>
+
+    <script>
+      function attachEvent(
+        fontSize,
+        fontStyle,
+        color,
+        textColor,
+        textBackgroundColor
+      ) {
+        return function () {
+          document.body.style.fontSize = fontSize;
+          document.body.style.fontFamily = fontStyle;
+          document.body.style.backgroundColor = color;
+          document.body.style.color = textColor;
+          document.body.style.background = textBackgroundColor;
+        };
+      }
+
+      document.getElementById("button1").onclick = attachEvent(
+        "30px",
+        "Times New Roman",
+        "green",
+        "white",
+        "blue"
+      );
+      document.getElementById("button2").onclick = attachEvent(
+        "40px",
+        "Bodoni MT Black",
+        "yellow",
+        "black",
+        "orange"
+      );
+      document.getElementById("button3").onclick = attachEvent(
+        "20px",
+        "Algerian",
+        "red",
+        "white",
+        "purple"
+      );
+    </script>
+  </body>
+</html>

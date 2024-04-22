@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Styler</title>
+  </head>
+  <body>
+    <!-- Dropdowns -->
+    <select id="fontSizeSelector">
+      <option value="12">Small</option>
+      <option value="16" selected>Medium</option>
+      <option value="20">Large</option>
+    </select>
+    <select id="fontFamilySelector">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+
+    <!-- Text Field -->
+    <input type="text" id="textField" placeholder="Enter text" />
+
+    <!-- Text to Style -->
+    <div id="text">Example Text</div>
+
+    <script>
+      class TextStyler {
+        constructor() {
+          this.textElement = document.getElementById("text");
+          this.fontSizeSelector = document.getElementById("fontSizeSelector");
+          this.fontFamilySelector =
+            document.getElementById("fontFamilySelector");
+          this.textField = document.getElementById("textField");
+
+          this.fontSizeSelector.addEventListener("change", () =>
+            this.changeTextSize()
+          );
+          this.fontFamilySelector.addEventListener("change", () =>
+            this.changeFontFamily()
+          );
+          this.textField.addEventListener("input", () =>
+            this.changeTextContent()
+          );
+        }
+
+        changeTextSize() {
+          const newSize = this.fontSizeSelector.value + "px";
+          this.textElement.style.fontSize = newSize;
+        }
+
+        changeFontFamily() {
+          const newFontFamily = this.fontFamilySelector.value;
+          this.textElement.style.fontFamily = newFontFamily;
+        }
+
+        changeTextContent() {
+          const newTextContent = this.textField.value;
+          this.textElement.textContent = newTextContent;
+        }
+      }
+
+      // Initialize the class
+      const textStyler = new TextStyler();
+    </script>
+  </body>
+</html>

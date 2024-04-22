@@ -8,16 +8,19 @@
 // console.log(a,b,c);
 
 // local scope ...
-/*
-if (true){
-    var d = 40; 
-    let e = 50;
-    const f = 60;
-}
-document.getElementById("javaScript").innerHTML=d;
+
+// if (true){
+//     var d = 40; 
+//     let e = 50;
+//     const f = 60;
+// }
+
+
+
+// document.getElementById("javaScript").innerHTML=d;
 // document.getElementById("javaScript").innerHTML=e);  err;
 // document.getElementById("javaScript").innerHTML=f);    erro;
-*/
+
 // +++++++++++++++++++++++++++++ String ++++++++++++++++++++++++
 
 const Name = "Ismail";
@@ -65,3 +68,28 @@ result.innerHTML= Name
 +Name.toLocaleUpperCase()
 +"<br>toLocaleLowerCase() : "
 +Name.toLocaleLowerCase()
+
+//  ..............   CLOSURE it will return all lexical scope  .......
+
+// function randomColor(color) {
+//     let colors = ["red", "green", "blue", "black", "orange", "purple"];
+//     color = colors[Math.floor(Math.random() * colors.length)];
+//     return color;
+// }
+
+function getRandomColor(color) {
+    return color = '#' + Math.floor(Math.random()*16777215).toString(16);
+  }
+
+function clickHandler(fontSize,fontFamily,textColor,color){
+    return function(){
+        document.body.style.fontSize = fontSize;
+        document.body.style.fontFamily = fontFamily;
+        document.body.style.color = textColor;
+        document.body.style.backgroundColor = color;
+    }
+}
+
+document.getElementById("btn1").onclick = clickHandler("10px","Cooper Black",getRandomColor(),getRandomColor());
+document.getElementById("btn2").onclick = clickHandler("12px","Palace Script MT",getRandomColor(),getRandomColor());
+document.getElementById("btn3").onclick = clickHandler("10px","Snap ITC",getRandomColor(),getRandomColor());

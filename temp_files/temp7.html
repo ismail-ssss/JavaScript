@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Wall Clock</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .clock {
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        border: 10px solid #333;
+        border-radius: 50%;
+        position: relative;
+        margin: 50px auto;
+      }
+
+      .hour-hand {
+        width: 6px;
+        height: 70px;
+        background-color: #333;
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform-origin: bottom center;
+        transform: translateX(-50%) rotate(90deg);
+      }
+
+      .minute-hand {
+        width: 4px;
+        height: 100px;
+        background-color: #333;
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        transform-origin: bottom center;
+        transform: translateX(-50%) rotate(180deg);
+      }
+
+      .second-hand {
+        width: 2px;
+        height: 120px;
+        background-color: red;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform-origin: bottom center;
+        transform: translateX(-50%) rotate(270deg);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #333;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .numbers {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        color: #333;
+        transform: translate(-50%, -50%);
+      }
+
+      .numbers span {
+        display: block;
+        position: absolute;
+        transform-origin: center;
+      }
+
+      .numbers span:nth-child(1) {
+        transform: rotate(10deg);
+      }
+
+      /* Apply rotation to all span elements from 2nd to 60th with a 4-degree gap */
+      .numbers span:nth-child(n + 2):nth-child(-n + 60) {
+        transform: rotate(calc(10deg + (4deg * (n - 1))));
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Digital Wall Clock</h1>
+    </header>
+    <div class="clock">
+      <div class="hour-hand" id="hourHand"></div>
+      <div class="minute-hand" id="minuteHand"></div>
+      <div class="second-hand" id="secondHand"></div>
+      <div class="dot"></div>
+      <div class="numbers">
+        <!-- Generate spans for numbers from 1 to 12 -->
+        <!-- The remaining spans will be hidden as dots -->
+        <span>1</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>2</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>3</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>4</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>5</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>6</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>7</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>8</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>9</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>10</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>11</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+        <span>12</span>
+      </div>
+    </div>
+    <script>
+      function rotateClockHands() {
+        const now = new Date();
+        const hours = now.getHours() % 12;
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+
+        const hourHand = document.getElementById("hourHand");
+        const minuteHand = document.getElementById("minuteHand");
+        const secondHand = document.getElementById("secondHand");
+
+        const hourDegrees = hours * 30 + minutes * 0.5; // Each hour is 30 degrees, each minute is 0.5 degrees
+        const minuteDegrees = minutes * 6 + seconds * 0.1; // Each minute is 6 degrees, each second is 0.1 degrees
+        const secondDegrees = seconds * 6; // Each second is 6 degrees
+
+        hourHand.style.transform = `translateX(-50%) rotate(${hourDegrees}deg)`;
+        minuteHand.style.transform = `translateX(-50%) rotate(${minuteDegrees}deg)`;
+        secondHand.style.transform = `translateX(-50%) rotate(${secondDegrees}deg)`;
+      }
+
+      // Update clock hands every second
+      setInterval(rotateClockHands, 1000);
+
+      // Initial call to rotate clock hands immediately
+      rotateClockHands();
+    </script>
+  </body>
+</html>
