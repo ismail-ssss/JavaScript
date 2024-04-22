@@ -1,9 +1,9 @@
-// map, filter, reduce ............................................
+// filter, map  reduce ............................................
 
 // const coding = ["js","ruby","java","python","cpp"];
 
 // const values = coding.forEach(function(item,index){
-//     // console.log(item);               
+//     // console.log(item);
 //     document.write(index + " : " + item + "<br>");
 // })
 // const newNums = [1,2,3,4,5,6,7,8,9];
@@ -19,7 +19,6 @@
 //     }
 // })
 // console.log(newNums2);
-
 
 // const personalDetails = [
 //     {Name: 'Ismail', lastName: 'Bhattipuri', age: 20},
@@ -45,6 +44,8 @@
 
 // console.log(userDetails);
 
-const myNumbers = [1,2,3,5,6,7,8,9];
+// ................ map
 
-const newNum = myNumbers.map( (num) =>  num + 10);
+const myNumbers = [1, 2, 3, 5, 6, 7, 8, 9];
+
+const newNum = myNumbers.map((num) => num + 10);
