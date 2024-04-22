@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+    <script>
+      //  +++++++++++++  closure gives you access to an outer
+      //                 function's scope from an inner function  +++++++++++++++
+
+      // .......  lexical scoping ............
+      function outer() {
+        let userName = "ismail";
+        function inner() {
+          console.log(userName); // inner() has access of outer() scope
+        }
+        inner();
+      }
+      // outer();
+
+      function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+          console.log(name);
+        }
+        return displayName; // it will share all data of makeFunc()
+      }
+      const myFunc = makeFunc();
+      myFunc();
+
+      // ........ real word example .................
+      function clickHandler(color) {
+        return function () {
+          document.body.style.backgroundColor = `${color}`;
+        };
+      }
+      document.getElementById("orange").onclick = clickHandler("orange");
+      document.getElementById("green").onclick = clickHandler("green");
+    </script>
+  </body>
+</html>
