@@ -1,13 +1,3 @@
-// ........... Array
-
-const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const array1 = ["ismail", "chetan", "iqra", "minaz"];
-const array2 = ["ismail", "chetan", 10, 20];
-
-console.log(array[0]);
-console.log(array1[2]);
-console.log(array2[3]);
-
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
