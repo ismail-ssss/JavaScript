@@ -1,4 +1,19 @@
+//+++++++++++++ loop +++++++++++++++
+//Loops offer a quick and easy way to do something repeatedly
+
+// for statement
+// do...while .. The do...while statement repeats until a specified condition evaluates to false.
+// while statement.. A while statement executes its statements as long as a specified condition evaluates to true.
+// labeled statement
+// break statement
+// continue statement
+// for...in statement
+// for...of statement
+
 // ........... for .........
+//A for loop repeats until a specified condition
+// evaluates to false. The JavaScript for loop is
+// similar to the Java and C for loop.
 
 // for(let i = 1; i<10; i++){
 //     console.log(`out ${i}`);
@@ -16,6 +31,10 @@
 // }
 
 // ............... for of ..............
+//The for...of statement creates a loop Iterating over
+// iterable objects (including Array, Map, Set, arguments
+// object and so on), invoking a custom iteration hook with
+// statements to be executed for the value of each distinct property.
 
 //     let myArray = ["flash", "batman", "superman"];
 // for (const i of myArray) {
@@ -41,6 +60,10 @@
 // }
 
 // ..................... forin and object ............
+//The for...in statement iterates a specified variable
+// over all the enumerable properties of an object.
+// For each distinct property, JavaScript executes
+// the specified statements.
 
 // const myObject = {
 //     js: 'javaScript',

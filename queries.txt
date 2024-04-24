@@ -1,0 +1,14 @@
+what is js meaning
+	JavaScript is a dynamic programming language that's used for web development, 
+	in web applications,for game development
+
+js engine:
+
+diff betn filter and find:
+
+parseInt :   The parseInt() function parses a string and returns an integer
+
+
+what is filter: 
+
+slice and splice

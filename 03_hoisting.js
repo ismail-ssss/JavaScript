@@ -1,7 +1,7 @@
 // ++++++++++++++++++ Hoisting : the built-in behavior of
 // the language through which declarations of functions,
 // variables, and classes are moved to the top of their
-// scope – all before code execution +++++++++++++++++++
+// scope all before code execution +++++++++++++++++++
 
 // console.log(one); // output undefined
 // console.log(two); // output error
