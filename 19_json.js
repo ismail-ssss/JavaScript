@@ -1,4 +1,9 @@
 // ++++++++++++++ json ++++++++++
+//    JSON (JavaScript Object Notation) is defined as
+// a file format used in object-oriented programming
+// that uses human-readable language, text,
+// and syntax to store and communicate data objects
+// between applications.
 const course = {
   cName: "js",
   prise: 999,
