@@ -1,0 +1,15 @@
+Scope 
+Hoisting
+Closure
+var, let, const
+oprators and datatypes
+string and its methods
+array and its methods
+set, map, date, filter, find, reduce
+conditional statements
+Looping statements for, forin, forof, foreach, do while, continue, break, labeled
+type conversion and string interpolation
+functions and arrow functions
+CallBacks callback hell and Asynchonous
+promise promise chain
+json

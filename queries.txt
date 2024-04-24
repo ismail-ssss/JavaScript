@@ -1,14 +1,44 @@
-what is js meaning
+1) what is js meaning
 	JavaScript is a dynamic programming language that's used for web development, 
 	in web applications,for game development
 
-js engine:
+2) short circuit : logical or, logical and
 
-diff betn filter and find:
+3) js engine:
+A JavaScript engine is a computer program that executes JavaScript
+ code and converts it into computer understandable language.
 
-parseInt :   The parseInt() function parses a string and returns an integer
+4)diff betn filter and find:
+// The find() method of Array instances returns
+the first element in the provided array that satisfies
+the provided testing function. If no values satisfy
+the testing function, undefined is returned.
+
+// filter the data
+//  first position of an array elements
+
+// filter search the data
+// return the data which match condition
+
+5)parseInt :   The parseInt() function parses a string and returns an integer
 
 
-what is filter: 
+6)what is filter:   
+// filter() returns an array containing the
+// element that satisfies the condition
 
-slice and splice
+7) slice and splice
+// ........... slice .........
+// The slice() method of Array instances returns
+// a shallow copy of a portion of an array into
+// a new array object selected from start to end
+
+// (end not included) where start and end represent
+// the index of items in that array. The original array
+// will not be modified
+
+
+// ............. splice ..........
+// The splice() method of Array
+//instances changes the contents of an array by removing or replacing
+// existing elements and/or adding new elements in place.
