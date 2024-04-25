@@ -28,7 +28,7 @@ const myarr2 = new Array(1, 2, 3, 4);
 // console.log(typeof array);
 // console.log(typeof newarr);
 
-// ........... slice .........
+// ........... slice ......... from where to where have to execute the data in array
 // The slice() method of Array instances returns
 // a shallow copy of a portion of an array into
 // a new array object selected from start to end
@@ -62,7 +62,7 @@ console.log(animals.slice(2, -1));
 console.log(animals.slice());
 // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
 
-// ............. splice ..........
+// ............. splice .......... from where to where have to add the data in array
 // The splice() method of Array
 //instances changes the contents of an array by removing or replacing
 // existing elements and/or adding new elements in place.

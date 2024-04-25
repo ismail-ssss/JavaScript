@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input Array</title>
+  </head>
+  <body>
+    <script>
+      let userInput = prompt("Enter length of array");
+      let arr = [];
+
+      for (let i = 0; i < userInput; i++) {
+        arr[i] = prompt("Enter value");
+      }
+
+      const total = sum(...arr);
+
+      function sum(...numbers) {
+        return document.write(numbers.join("<br>"));
+      }
+    </script>
+  </body>
+</html>

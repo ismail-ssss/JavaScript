@@ -13,3 +13,11 @@ functions and arrow functions
 CallBacks callback hell and Asynchonous
 promise promise chain
 json
+
+ parameter and argument in js: default parameter
+ type coercion
+operator precedence
+ higher order function
+ currying function
+ Manipulating DOM
+ template literal and string interpolation

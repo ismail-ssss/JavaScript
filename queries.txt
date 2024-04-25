@@ -2,13 +2,14 @@
 	JavaScript is a dynamic programming language that's used for web development, 
 	in web applications,for game development
 
-2) short circuit : logical or, logical and
+2) short circuit : circuit evaluation avoids unnecessary work and leads to efficient processing.
+if you have something like a && b, and a is false,
+ JavaScript won't bother checking b because it already 
+ knows the result will be false
 
-3) js engine:
-A JavaScript engine is a computer program that executes JavaScript
- code and converts it into computer understandable language.
+3) js engine: it convert js code into computer understanding language
 
-4)diff betn filter and find:
+4)diff btw filter and find:
 // The find() method of Array instances returns
 the first element in the provided array that satisfies
 the provided testing function. If no values satisfy
@@ -17,7 +18,7 @@ the testing function, undefined is returned.
 // filter the data
 //  first position of an array elements
 
-// filter search the data
+// find search the data
 // return the data which match condition
 
 5)parseInt :   The parseInt() function parses a string and returns an integer
@@ -28,7 +29,7 @@ the testing function, undefined is returned.
 // element that satisfies the condition
 
 7) slice and splice
-// ........... slice .........
+// ........... slice ......... from where to where have to execute the data in array
 // The slice() method of Array instances returns
 // a shallow copy of a portion of an array into
 // a new array object selected from start to end
@@ -38,7 +39,21 @@ the testing function, undefined is returned.
 // will not be modified
 
 
-// ............. splice ..........
+// ............. splice .......... from where to where have to add the data in array
 // The splice() method of Array
 //instances changes the contents of an array by removing or replacing
 // existing elements and/or adding new elements in place.
+
+8)spread and rest:
+spread:
+ It's commonly used to concatenate or combine arrays. 
+
+9)regular expression :
+
+10) parameter and argument in js: default parameter
+11) type coercion
+12) operator precedence
+13) higher order function
+14) currying function
+15) Manipulating DOM
+16) template literal and string interpolation
