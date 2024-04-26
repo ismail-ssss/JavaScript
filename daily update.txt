@@ -1,0 +1,12 @@
+friday apr 26
+parameters and arguments
+type coercion
+operators precedence
+higher order function
+default parameter 
+currying functioin
+Manipulating DOM
+template literal 
+
+saterday apr 27
+call bind apply

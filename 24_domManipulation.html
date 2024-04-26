@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Example</title>
+    <style>
+      .highlighted {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="heading">Initial Heading</h1>
+      <p id="paragraph">Initial Paragraph Content</p>
+      <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+    <button id="btn-append">Append Element</button>
+    <button id="btn-remove">Remove Paragraph</button>
+    <button id="btn-modify">Modify Heading Style</button>
+
+    <script>
+      // Manipulating DOM:
+      //(Document Object Model) the process of dynamically changing the structure, content, or style of a web page in response to user interactions, events, or other programmatic triggers. The DOM represents the hierarchical structure of HTML elements on a web page as a tree-like structure, with each element being a node in the tree.
+      //	.............methods and properties.............
+      //Access Elements: JavaScript can access HTML elements by their IDs, classes, tags, or other attributes using methods like getElementById, getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll.
+
+      //Modify Content: JavaScript can change the text content, HTML content, attributes, or styles of existing elements using properties like textContent, innerHTML, setAttribute, style, etc.
+
+      //Create and Remove Elements: JavaScript can dynamically create new elements, such as paragraphs, divs, images, etc., and append them to the DOM using methods like createElement, appendChild, insertBefore, etc. It can also remove existing elements using methods like removeChild.
+
+      //Manipulate Event Handlers: JavaScript can add event listeners to elements to respond to user interactions (such as clicks, mouse movements, keyboard inputs, etc.) and perform actions accordingly.
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Access elements
+        const container = document.getElementById("container");
+        const paragraph = document.getElementById("paragraph");
+
+        // Create a new element
+        const newElement = document.createElement("p");
+        newElement.textContent = "Newly Appended Paragraph";
+
+        // Append the new element to the container
+        const btnAppend = document.getElementById("btn-append");
+        btnAppend.addEventListener("click", function () {
+          container.appendChild(newElement);
+        });
+
+        // Remove an existing element
+        const btnRemove = document.getElementById("btn-remove");
+        btnRemove.addEventListener("click", function () {
+          container.removeChild(paragraph);
+        });
+
+        // Modify the style of an existing element
+        const heading = document.getElementById("heading");
+        const btnModify = document.getElementById("btn-modify");
+        btnModify.addEventListener("click", function () {
+          // Toggle class to add or remove the highlighted style
+          heading.classList.toggle("highlighted");
+        });
+      });
+    </script>
+  </body>
+</html>

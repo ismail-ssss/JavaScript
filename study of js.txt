@@ -1,23 +1,23 @@
-Scope 
-Hoisting
-Closure
-var, let, const
-oprators and datatypes
-string and its methods
-array and its methods
-set, map, date, filter, find, reduce
-conditional statements
-Looping statements for, forin, forof, foreach, do while, continue, break, labeled
-type conversion and string interpolation
-functions and arrow functions
-CallBacks callback hell and Asynchonous
-promise promise chain
-json
-
- parameter and argument in js: default parameter
- type coercion
-operator precedence
- higher order function
- currying function
- Manipulating DOM
- template literal and string interpolation
+INDEX 
+1) Scope 
+2) Hoisting
+3) Closure
+4) var, let, const
+5) oprators
+6) datatypes
+7) string and its methods
+8) array and its methods
+9) set(), map(), filter(), find(), reduce(), push() ,pop(), shift(), unshift(), date()
+10) objects
+11) conditional statements
+12) Looping statements for, forin, forof, foreach, do while, continue, break, labeled
+13) type conversion, template literal, string interpolation
+14) functions arrow functions, higher order function , currying function
+15) spread and rest
+16) CallBacks callback hell and Asynchonous
+promise, promise chain
+17) json, js engine, short circuit
+18) parameter and argument, default parameter
+19) type coercion
+20) operator precedence
+21) Manipulating DOM
