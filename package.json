@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "leaning javaScrip language in ultimez technology Company.",
   "main": "01_task.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

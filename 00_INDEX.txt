@@ -1,7 +1,7 @@
 INDEX
 01) what is javaScript, JavaScript Engine
-02) var, let, const 
-03) Data Types       
+02) var, let, const
+03) Data Types
 04) Operators
 05) Short Circuit Evaluation
 06) Operator Precedence
@@ -26,8 +26,6 @@ INDEX
 25) JSON (JavaScript Object Notation)
 26) Manipulating DOM (Document Object Model)
 
-
+27) Modules
 Error Handling:
-Modules
-ES6+ Features:
 event
