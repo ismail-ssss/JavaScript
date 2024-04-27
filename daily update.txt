@@ -9,4 +9,4 @@ Manipulating DOM
 template literal 
 
 saterday apr 27
-call bind apply
+call() bind() apply() and revise all concept

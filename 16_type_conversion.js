@@ -1,4 +1,4 @@
-// +++++++++++ conversion ++++++++++++
+// +++++++++++ type conversion ++++++++++++
 // the process of converting a value from
 // one data type to another
 
@@ -42,14 +42,16 @@
 // console.log(parseInt("xyz"));
 // NaN (input can't be converted to an integer)
 console.log();
-//+++++++++template literal ++++
-//it allows string interpolation and multiline strings. They are enclosed by backticks (``) instead of single or double quotes.
-//console.log(`hello i'm
-//ismial`);
-console.log();
-// ............ string interpolation
-// the process of embedding expressions or variables within a string to dynamically construct the string's content. It allows you to create strings with placeholders that are replaced with the actual values of variables or the results of expressions.
-// Inside a template literal, you can use ${} to insert variables or expressions.
-// let name = "ismail";
-// console.log(`hello mr/mis ${name}`);
-console.log();
+// ++++++ type coercion ++++++++
+// Type coercion in JavaScript refers to the automatic conversion of values from one data type to another when performing operations or comparisons. JavaScript is a dynamically typed language, which means that variables can hold values of any data type, and type coercion helps facilitate operations between different types.
+
+//a) Implicit Type Coercion: This occurs automatically when JavaScript converts the type of a value to another type without explicit instructions from the developer. For example, when using the + operator with different types:
+const num1 = 5;
+const str = "10";
+console.log(num1 + str); // Output: "510"
+
+//b)Explicit Type Coercion: This occurs when the developer explicitly converts the type of a value using built-in functions or operators. For example, using parseInt() to convert a string to an integer:
+const str1 = "10";
+const str2 = "10";
+const num2 = Number(str1) + parseInt(str2);
+console.log(num2); // Output: 20

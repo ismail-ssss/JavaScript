@@ -1,4 +1,4 @@
-// ++++++++++++++++++ async +++++++++++++++
+// ++++++++++++++++++ async await +++++++++++++++
 // async function always returns a promise await pauses the execution of its surrounding async function until the promise is settled.
 
 function api() {

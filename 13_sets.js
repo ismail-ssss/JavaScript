@@ -40,7 +40,7 @@
 // console.log("before", arr);
 // arr = new Set(arr);
 // console.log("after", arr);
-console.log();
+console.log("set ends here");
 // +++++++ filter +++++++++++
 // filter() returns an array containing the
 // element that satisfies the condition
@@ -91,7 +91,7 @@ console.log();
 // const userDetails = personalDetails.filter( (bk) => {return bk.age > 20 && bk.Name === "chetan"});
 
 // console.log(userDetails);
-console.log();
+console.log("filter ends here");
 // +++++++++++ find +++++++++++++
 // find() returns the element itself that
 // satisfies the condition.
@@ -128,11 +128,9 @@ console.log();
 //   .map((num) => num + 1)
 //   .map((num) => num >= 40);
 // console.log(newNums);
-console.log();
+console.log("find ends here");
 // +++++++++++++++ reduce ++++++++++
-// a predefined method u
-// sed to reduce an array to a single value by
-// passing a callback function on each element of the array.
+// a predefined method u sed to reduce an array to a single value by passing a callback function on each element of the array.
 
 // It accepts a function executed on all the items of
 // the specified array in the left-to-right sequence.

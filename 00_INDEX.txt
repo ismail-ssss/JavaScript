@@ -1,0 +1,33 @@
+INDEX
+01) what is javaScript, JavaScript Engine
+02) var, let, const 
+03) Data Types       
+04) Operators
+05) Short Circuit Evaluation
+06) Operator Precedence
+07) Scope
+08) Hoisting
+09) Closure
+10) String and its methods
+11) Array and its methods
+12) Objects
+13) Set(), Map(), Filter(), Find(), Reduce(), Push(), Pop(), Shift(), Unshift(), Date()
+14) Conditional Statements
+15) Looping Statements (for, for...in, for...of, forEach, do...while, continue, break, labeled)
+16) Type Conversion , Type Coercion
+17) Template Literals / String Interpolation
+18) Functions (Regular Functions, Arrow Functions, Higher-Order Functions, Currying Functions)
+19) Parameters and Arguments, Default Parameters
+20) regard to this(), call(), bind(), and apply() 
+21) Spread and Rest Operators
+22) Callbacks setTimeOut callback hell 
+23) Promises, asyncronouse, Promise Chains,
+24) Async/Await
+25) JSON (JavaScript Object Notation)
+26) Manipulating DOM (Document Object Model)
+
+
+Error Handling:
+Modules
+ES6+ Features:
+event

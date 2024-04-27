@@ -1,0 +1,1 @@
+// short circuit : circuit evaluation avoids unnecessary work and leads to efficient processing. if you have something like a && b, and a is false, JavaScript won't br checking b because it already knows result will be false

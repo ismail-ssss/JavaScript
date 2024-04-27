@@ -1,14 +1,3 @@
-1) what is js meaning
-	JavaScript is a dynamic programming language that's used for web development, 
-	in web applications,for game development
-
-2) short circuit : circuit evaluation avoids unnecessary work and leads to efficient processing.
-if you have something like a && b, and a is false,
- JavaScript won't br checking b because it already 
- knows result will be false
-
-3) js engine: it convert js code into computer understanding language
-
 4)diff btw filter and find:
 // find() method of Array instances returns first element in provided array that satisfies provided testing function. If no values satisfy testing function, undefined is returned.
 
@@ -54,38 +43,4 @@ spread:
 14) currying function
 15) Manipulating DOM
 16) template literal and string interpolation
-
-17) push() : push a value in array
-	pop() : Removing Last Element from Array
-	shift() : removes first element from an array and returns it
-	unshift() : adds elements to beginning of an array and returns new length.
-	find() : 
-	filter() :it refers to a method available on arrays
-	that allows you to create a new array containing
-	elements that pass a certain condition. The filter()
-	method iterates over each element of the array and
-	applies a callback function to each element. If the
-	callback function returns true for an element, that
-	element is included in the new array. If the callback
-	function returns false, the element is excluded.
-
-
-
-
-23)Higher-order function:
-Higher-order function that takes a function as an argument
-
-24) a function with multiple arguments is transformed into a sequence of functions, each taking only one argument. The curried function returns another function until it has received all its arguments, at which point it evaluates and returns the result.
-
-
-
-26) template literal :
-it allows string interpolation and multiline strings. They are enclosed by backticks (``) instead of single or double quotes.
-ex - console.log(`hello i'm 
-ismial`);
-
-string interpolation
-the process of embedding expressions or variables within a string to dynamically construct the string's content. It allows you to create strings with placeholders that are replaced with the actual values of variables or the results of expressions.
-Inside a template literal, you can use ${} to insert variables or expressions.
-ex - console.log(`hello mr/mis ${name}`);
 
