@@ -1,4 +1,4 @@
-4)diff btw filter and find:
+4.diff btw filter and find:
 // find() method of Array instances returns first element in provided array that satisfies provided testing function. If no values satisfy testing function, undefined is returned.
 
 // filter data

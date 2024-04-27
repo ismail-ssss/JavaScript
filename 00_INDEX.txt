@@ -1,5 +1,5 @@
 INDEX
-01) what is javaScript, JavaScript Engine
+01) theory part - what is javaScript, JavaScript Engine
 02) var, let, const
 03) Data Types
 04) Operators

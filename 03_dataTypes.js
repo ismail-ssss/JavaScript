@@ -3,7 +3,7 @@
 // JavaScript includes primitive and non-primitive.
 
 // ........ primitive ..........
-// String ...Strings are useful for holding data that can be represented in text form.
+// String ...Strings are useful for holding data that can be epresented in text form.
 // Namber ...Number values represent floating-point numbers like 37 or -9.25.
 // Boolean ...The Boolean object represents a truth value: true or false.
 // null ...
@@ -41,6 +41,7 @@ console.table([
 
 const heros = ["ismail", "chetan", "umar"];
 console.log(heros);
+
 let myobj = {
   name: "ismail",
   age: 22,
