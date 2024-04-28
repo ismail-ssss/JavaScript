@@ -6,24 +6,24 @@
 
 // .... object literals ....
 // let symble1 = Symbol("abc");
-// const JsUser = {
-//   name: "ismail",
-//   fullName: "Ismail Bhattipuri", // it only accessable like JsUser["email"] not with dot
-//   [symble1]: "ISB",
-//   age: 18,
-//   location: "hubli",
-//   email: "ibhattipuri@gmail.com",
-//   islogedIn: false,
-//   lastLoginDay: ["Monday", "Saturday"],
-//   func: function () {
-//     return this.firstName + " " + this.lastName;
-//   },
-// };
+const JsUser = {
+  name: "ismail",
+  fullName: "Ismail Bhattipuri",
+  [symble1]: "ISB",
+  age: 18,
+  location: "hubli",
+  email: "ibhattipuri@gmail.com",
+  islogedIn: false,
+  lastLoginDay: ["Monday", "Saturday"],
+  func: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
 
 // console.log(JsUser.email);
 // console.log(JsUser["email"]);
 // console.log(typeof JsUser[symble1]);
-// Object.freeze(JsUser);
+// Object.freeze(JsUser); // it will stop the access further
 // console.log(JsUser);
 
 // JsUser.greeting = function () {

@@ -1,5 +1,5 @@
 // +++++++++++ call bind apply ++++++++++
-//In JavaScript, bind, call, and apply are all methods that allow you to manipulate how a function is invoked, particularly with regard to its this context and argument passing.
+// bind, call, and apply are all methods that allow you to manipulate how a function is invoked, particularly with regard to it's this context and argument passing.
 
 // ............ call ............
 // This method calls a function with a given 'this' value and arguments provided individually. It immediately invokes the function with the specified context and arguments.Example:
@@ -39,18 +39,20 @@ const copyGreet1 = greet.bind(person2, "hubli", "india");
 copyGreet1();
 
 // .............. bind ...........
-//This method creates a new function that, when called, has its this keyword set to a specific value, while also allowing you to pass in a predetermined set of arguments. It does not immediately execute the function but rather returns a new function with the specified context.
+//  This method creates a new function with the same body as the original function but with a fixed this value. (It doesn't immediately invoke the function; instead, it returns a new function that you can call later)
+
 // function greet1(name) {
 //   console.log(`Hello, ${name}! I am ${this.name}.`);
 // }
-// const person1 = { name: "Alice" };
-// const greetPerson = greet1.bind(person1, "Bob");
+// const person3 = { name: "Alice" };
+
+// const greetPerson = greet1.bind(person3, "Bob");
 // greetPerson(); // Output: Hello, Bob! I am Alice.
 
-// .............. apply .............
-//This method is similar to call, but it accepts arguments as an array rather than individually. It immediately invokes the function with the specified context and arguments provided in an array.Example:
-// function greet2(name) {
-//   console.log(`Hello, ${name}! I am ${this.name}.`);
-// }
-// const person2 = { name: "Alice" };
-// greet2.apply(person2, ["Bob"]); // Output: Hello, Bob! I am Alice.
+// ............ apply .............
+//This method is similar to call, (but it accepts arguments as an array rather than individually). It immediately invokes the function with the specified context and arguments provided in an array.Example:
+function greet2(name) {
+  console.log(`Hello, ${name}! I am ${this.name}.`);
+}
+const person4 = { name: "Alice" };
+greet2.apply(person4, ["Bob"]); // Output: Hello, Bob! I am Alice.
