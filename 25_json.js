@@ -5,25 +5,25 @@
 // and syntax to store and communicate data objects
 // between applications.
 
-const course = {
-  cName: "js",
-  prise: 999,
-  cInstructor: "ismail",
-};
+// const course = {
+//   cName: "js",
+//   prise: 999,
+//   cInstructor: "ismail",
+// };
 
-console.log(course);
+// console.log(course);
 
-const { cInstructor } = course;
-console.log(cInstructor);
+// const { cInstructor } = course;
+// console.log(cInstructor);
 
-let jsonstr = JSON.stringify(course); // convert Object into string
-console.log(jsonstr);
+// let jsonstr = JSON.stringify(course); // convert Object into string
+// console.log(jsonstr);
 
-jsonstr = jsonstr.replace("ismail", "ismail2");
-console.log(jsonstr);
+// jsonstr = jsonstr.replace("ismail", "ismail2");
+// console.log(jsonstr);
 
-newjsonObj = JSON.parse(jsonstr); // convert string into Object
-console.log(newjsonObj);
+// newjsonObj = JSON.parse(jsonstr); // convert string into Object
+// console.log(newjsonObj);
 
 // api is like
 // {

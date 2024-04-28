@@ -20,7 +20,7 @@ INDEX
 19) Parameters and Arguments, Default Parameters
 20) this(), call(), bind(), and apply()
 21) Spread and Rest Operators
-22) Callbacks setTimeOut callback hell 
+22) Callbacks callback hell, setTimeOut
 23) Promises, asyncronouse, Promise Chains,
 24) Async/Await
 25) JSON (JavaScript Object Notation)

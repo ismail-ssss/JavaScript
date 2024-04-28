@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      // read a local json file using fetch. can only open with live server
+      const listEl = document.querySelector("ul");
+      fetch("test.json")
+        .then((response) => response.json())
+        .then(
+          (data) => showInfo(data)
+          //   {data.forEach((post) => {
+          //     listEl.insertAdjacentHTML("beforeend", `<li>${post.name}</li>`);
+          //   });}
+        );
+      function showInfo(data) {
+        console.log(data);
+      }
+    </script>
+  </body>
+</html>
