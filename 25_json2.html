@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>json</title>
   </head>
   <body>
     <ul></ul>
+    <h3></h3>
     <script>
-      // read a local json file using fetch. can only open with live server
+      // read a local json file using fetch. can open with live server
       const listEl = document.querySelector("ul");
       fetch("test.json")
-        .then((response) => response.json())
-        .then(
-          (data) => showInfo(data)
-          //   {data.forEach((post) => {
-          //     listEl.insertAdjacentHTML("beforeend", `<li>${post.name}</li>`);
-          //   });}
-        );
-      function showInfo(data) {
-        console.log(data);
+        .then((res) => res.json())
+        .then((data) => {
+          // data.Countries.forEach((data) => {
+          // listEl.insertAdjacentHTML("beforebegin", `<li>${data.id}</li>`);
+          // });
+          const userData = data.Countries.filter((dt) => {
+            return listEl.insertAdjacentHTML(
+              "beforebegin",
+              `<li style="margin:20px; font-size:25px">
+                ${dt.id}
+                ${dt.name}
+                ${dt.lastName}
+                ${dt.city}
+              </li>`
+            );
+          });
+        });
+
+      // read a local txt file using fetch.
+      const h3 = document.querySelector("h3");
+      fetch("fetch.txt")
+        .then((res) => res.text())
+        .then((text) => showInfo(text));
+      function showInfo(test) {
+        h3.insertAdjacentHTML("beforeend", test);
       }
     </script>
   </body>
